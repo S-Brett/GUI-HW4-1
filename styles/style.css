@@ -1,0 +1,59 @@
+
+/*Brett Svendsen, UMass Lowell Computer Science*/
+/*brett_svendsen@student.uml.edu*/
+
+
+body {
+	background-color: palegreen;
+	text-align: center;
+}
+
+h1 {
+	color: blue;
+}
+
+.error {
+	color: red;
+	margin: 0px 5px;
+}
+                    
+table {
+	padding: 5px;
+	margin: 5px;
+	border: 5px blue;
+}
+
+form {
+	border: 4px pink;
+	border-style: solid;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+}
+
+input {
+	margin-bottom: 2px;
+}
+
+td, th { padding: 5px; }
+
+td.deadcell, th.deadcell {
+	visibility: hidden !important;
+	border-style: none !important;
+}
+
+.cell-header {
+	/*color: pink;*/
+	/*position: fixed;*/
+}
+
+th {
+	border-style: double;
+	background-color: dimgray;
+	color: white;
+}
+
+td {
+	border-style: solid;
+}
+

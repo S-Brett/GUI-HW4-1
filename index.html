@@ -1,0 +1,99 @@
+<!-- 
+	Brett Svendsen, UMass Lowell Computer Science
+	brett_svendsen@student.uml.edu
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>THE TABLE-ING</title>
+
+	<!-- <script
+  		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous">
+  	</script>
+
+  	<script
+  		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js">
+  	</script> -->
+
+  	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+<body>
+
+	<h1>Brett's Fantastical Table<br />of<br />Number Generating Multiplication</h1>
+
+	<form class="tcform" id="tableCreationForm" method="get" action="" onsubmit="return false;">
+		<fieldset>
+			<legend> 
+				Keep the range for any dimension between 250 numbers. <br />
+				There is no guarentee it will work with larger ranges. <br />
+				(MAX RANGE 500) <br />
+				(MAX NUMBER +/- 1,000,000,000,000) <br />
+				<br />
+			</legend>
+
+			<div>
+				<label for="tableStartX">Table Start X: </label>
+				<input id="tsX" name="tsX" value="1" required>
+			</div>
+			
+			<div>
+				<label for="tableEndX">Table End X: </label>
+				<input id="teX" name="teX" value="5" required>
+			</div>
+
+			<div>
+				<label for="tableStartY">Table Start Y: </label>
+				<input id="tsY" name="tsY" value="1" required>
+			</div>
+
+			<div>
+				<label for="tableEndY">Table End Y: </label>
+				<input id="teY" name="teY" value="5" required>
+			</div>
+
+			<input type="submit" name="submit" value="Submit">
+
+		</fieldset>
+	</form>
+<!-- 
+		<div id="tableStartXInput">
+			<label for="tableStartX">Table Start X:</label>
+			<input type="text" id="tableStartX" name="tableStartX" value="1">
+		</div>
+
+
+		<div id="tableEndXInput">
+			<label for="tableEndX">Table End X:</label>
+			<input type="text" id="tableEndX" name="tableEndX" value="5">
+		</div>
+
+		<br />
+
+		<div id="tableStartYInput">
+			<label for="tableStartY">Table Start Y:</label>
+			<input type="text" id="tableStartY" name="tableStartY" value="1">
+		</div>
+
+		<div id="tableEndYInput">
+			<label for="tableEndY">Table End Y:</label>
+			<input type="text" id="tableEndY" name="tableEndY" value="5">
+		</div>
+
+		<br />
+		<input type="submit" name="submit" onclick="genTable()">
+	</form> -->
+
+	<div id="table-div"></div>
+
+</body>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>
